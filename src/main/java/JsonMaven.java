@@ -24,6 +24,10 @@ public class JsonMaven {
 		
 		System.out.println("4. Delete From api Table");
 		
+		System.out.println("                                 ");
+		
+		System.out.println("5. Print From api Table");
+		
 	}
 	
 	public static void main(String[] args) throws NumberFormatException, IOException, InterruptedException {
@@ -55,6 +59,11 @@ public class JsonMaven {
 				
 			case 4:
 				Delete.delete();
+				
+				break;
+				
+			case 5:
+				Print.print();
 				
 				break;		
 				
