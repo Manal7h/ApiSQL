@@ -9,10 +9,12 @@ public class JsonMaven {
 		
 		System.out.println("Please Choice one Option:");
 		
-		System.out.println("1. Insert Into Hotels Table");
+		System.out.println("1. Insert Into api Table");
 		
 		
 		System.out.println("                                 ");
+		
+		System.out.println("2. Read From api Table");
 		
 		
 	}
@@ -32,6 +34,12 @@ public class JsonMaven {
 				insertFromApii.InsertFromApi();
 				
 				break;
+				
+			case 2:
+			//ReadFromApi readFromApii = new ReadFromApi();
+			ReadFromApi.readFromApi();
+				
+				break;	
 			}	
 		}
 		while (true);
