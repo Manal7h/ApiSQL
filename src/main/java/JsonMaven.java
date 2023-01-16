@@ -20,6 +20,10 @@ public class JsonMaven {
 		
 		System.out.println("3. Update From api Table");
 		
+		System.out.println("                                 ");
+		
+		System.out.println("4. Delete From api Table");
+		
 	}
 	
 	public static void main(String[] args) throws NumberFormatException, IOException, InterruptedException {
@@ -45,10 +49,14 @@ public class JsonMaven {
 				break;
 				
 			case 3:
-			//ReadFromApi readFromApii = new ReadFromApi();
 				Update.update();
 				
 				break;	
+				
+			case 4:
+				Delete.delete();
+				
+				break;		
 				
 			}	
 		}
