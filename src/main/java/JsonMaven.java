@@ -16,6 +16,9 @@ public class JsonMaven {
 		
 		System.out.println("2. Read From api Table");
 		
+		System.out.println("                                 ");
+		
+		System.out.println("3. Update From api Table");
 		
 	}
 	
@@ -39,7 +42,14 @@ public class JsonMaven {
 			//ReadFromApi readFromApii = new ReadFromApi();
 			ReadFromApi.readFromApi();
 				
+				break;
+				
+			case 3:
+			//ReadFromApi readFromApii = new ReadFromApi();
+				Update.update();
+				
 				break;	
+				
 			}	
 		}
 		while (true);
