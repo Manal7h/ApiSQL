@@ -59,7 +59,7 @@ public class JsonMaven {
 	        String SQLqueryForInserting = "insert into apaTable values('"+ web_pages +"' ,'" + state_province + "', '"+alpha_two_code+"','"+name+"' , '"+country+"' , '"+domian+"')";
 	        
 	 System.out.print(SQLqueryForInserting);
-	        Connection con = null;
+	        Connection con = null ;
 			
 			
 
@@ -67,7 +67,7 @@ public class JsonMaven {
 
 		        Driver driver = (Driver) Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
 		        DriverManager.registerDriver(driver);
-		        //con = DriverManager.getConnection(url, user, pass);
+		        con = DriverManager.getConnection(url, user, pass);
 
 		        Statement st = con.createStatement();
 		        
